@@ -3,15 +3,17 @@
 1. If the code is `valid` what will be the output and if `invalid` what will be the error. Write the error message.
 
 ```js
-console.log(animal);
+console.log(animal); 
 var animal = "monkey";
-// Output or Error Message
+
+Valid 
+monkey
 ```
 
 ```js
-console.log(animal);
+console.log(animal); //Error animal not defined
 let animal = "monkey";
-// Output or Error Message
+
 ```
 
 ```js
