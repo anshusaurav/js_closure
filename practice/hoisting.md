@@ -7,18 +7,23 @@ console.log(animal);
 var animal = "monkey";
 
 Valid 
-monkey
+undefined
 ```
 
 ```js
-console.log(animal); //Error animal not defined
+console.log(animal); 
 let animal = "monkey";
 
+Invalid 
+Error: animal is not defined
 ```
 
 ```js
 console.log(animal);
 const animal = "monkey";
+
+Invalid 
+Error: animal is not defined
 // Output or Error Message
 ```
 
@@ -27,7 +32,9 @@ function sayHello(msg) {
   alert(msg);
 }
 sayHello("Hey Everyone");
-// Output or Error Message
+
+Valid
+Hey Everyone in alert modal window
 ```
 
 ```js

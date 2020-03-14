@@ -67,6 +67,12 @@ callWithHello("How Are You?"); // Hello How Are You?
 
 ```js
 function addGame(gameName) {
+  let score = 0;
+  function f(){
+    ++score;
+    console.log(`Score of ${gameName} is ${score}`);
+  } 
+  return f;
   // your code goes here
 }
 
@@ -84,13 +90,19 @@ cricket(); // Your score of Cricket is 2
 ```js
 function getCard(suit) {
   // your code goes here
+  let cardNumArr = [2,3,4,5,6,7,8,9,10,'J','Q','K','A'];
+  function f(){ 
+    let cardNum = Math.floor(Math.random() * 13);
+    console.log(`Card is: ${cardNumArr[cardNum]} ${suit}`); 
+  }
+  return f;
 }
 
 // Output
-const randomClub = addGame("Club");
+const randomClub = getCard("Club");
 randomClub(); // Card is: 6 Club
 randomClub(); // Card is: A Club
-const randomSpade = addGame("Spade");
+const randomSpade = getCard("Spade");
 randomSpade(); // Card is: 6 Spade
 randomSpade(); // Card is: A Spade
 ```
