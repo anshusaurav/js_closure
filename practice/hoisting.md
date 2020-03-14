@@ -42,7 +42,9 @@ sayHello("Hey Everyone");
 function sayHello(msg) {
   alert(msg);
 }
-// Output or Error Message
+
+Valid
+Hey Everyone in alert modal window
 ```
 
 ```js
@@ -50,7 +52,9 @@ sayHello("Hey Everyone");
 var sayHello = msg => {
   alert(msg);
 };
-// Output or Error Message
+
+Valid
+Function sayHello is undefined
 ```
 
 ```js
@@ -58,4 +62,6 @@ sayHello("Hey Everyone");
 let sayHello = msg => {
   alert(msg);
 };
+Invalid
+Function sayHello is not defined
 ```
