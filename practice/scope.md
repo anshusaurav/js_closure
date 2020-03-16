@@ -248,7 +248,7 @@ function sample() {
   console.log(username);
 }
 
-undefined as there is only function declaration
+undefined as there is only function declaration and console.log() is inside the function and function is never executed. 
 ```
 
 21. Guess the output and the reason behind that.
@@ -309,7 +309,7 @@ sample("First", "Second", "Third");
 Hello I am First
 Hello I am Second
 Hello I am Third
-As everything seem correct
+As everything seem correct and console.log() have independent outer Lexical Environments, each one has accesst to arguments.
 ```
 
 25. Guess the output and the reason behind that.
@@ -327,7 +327,7 @@ sample("First", "Second", "Third");
 Hello I am First
 Hello I am Second
 Hello I am Third
-As everything seem correct
+As everything seem correct and console.log() have independent outer Lexical Environments, each one has accesst to arguments.
 ```
 
 26. Guess the output and the reason behind that.
@@ -342,7 +342,7 @@ if (true) {
   myFunc();
 }
 
-Error as In declaration mode username is saved in memory but its not initialized. So Its undefined in Execution mode inside myFunc function
+Error as In declaration mode username is saved in memory but its not initialized. So Its undefined in Execution mode inside myFunc function and let declaration comes later after myFunc function declaration. 
 ```
 
 27. Guess the output and the reason behind that.
