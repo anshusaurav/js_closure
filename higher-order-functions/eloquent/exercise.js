@@ -33,10 +33,22 @@ console.log(every([2, 4, 16], n => n < 10));
 console.log(every([], n => n < 10));
 // → true
 
-// Challenge 4. Dominant writing direction
-// function dominantDirection(text) {
-//   
-// }
+//Challenge 4. Dominant writing direction
+function dominantDirection(text) {
+  let scripts = countBy(text, char => {
+   let script = characterScript(char.codePointAt(0));
+   return script ? script.direction : "none";
+ }).filter(({name}) => name != "none");
+
+ let total = scripts.reduce((n, {count}) => n + count, 0);
+ if (total == 0) return "No scripts found";
+
+ return scripts.reduce((acc, {name, count}) => {
+   if(50 < Math.round(count * 100 / total)) 
+      acc = name;
+   return acc;
+ },'');
+}
 
 console.log(dominantDirection("Hello!"));
 // → ltr

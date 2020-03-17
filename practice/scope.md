@@ -447,5 +447,5 @@ let allFunctions = [add, add, add, add, add, sub, sub, multiply, divide];
 for(let func of allFunctions) {
     console.log(func(12,10));
 }
-Not sure should I pass one value for next function when we need two values otherwise in last divide is called and if we default second value with 0 it will be undefined. 
+Not sure should I pass one value for next function when we need two values otherwise in last divide is called and if we default second value with 0, it will be undefined. 
 ```
