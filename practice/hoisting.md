@@ -3,20 +3,27 @@
 1. If the code is `valid` what will be the output and if `invalid` what will be the error. Write the error message.
 
 ```js
-console.log(animal);
+console.log(animal); 
 var animal = "monkey";
-// Output or Error Message
+
+Valid 
+undefined
 ```
 
 ```js
-console.log(animal);
+console.log(animal); 
 let animal = "monkey";
-// Output or Error Message
+
+Invalid 
+Error: animal is not defined
 ```
 
 ```js
 console.log(animal);
 const animal = "monkey";
+
+Invalid 
+Error: animal is not defined
 // Output or Error Message
 ```
 
@@ -25,7 +32,9 @@ function sayHello(msg) {
   alert(msg);
 }
 sayHello("Hey Everyone");
-// Output or Error Message
+
+Valid
+Hey Everyone in alert modal window
 ```
 
 ```js
@@ -33,7 +42,9 @@ sayHello("Hey Everyone");
 function sayHello(msg) {
   alert(msg);
 }
-// Output or Error Message
+
+Valid
+Hey Everyone in alert modal window
 ```
 
 ```js
@@ -41,7 +52,9 @@ sayHello("Hey Everyone");
 var sayHello = msg => {
   alert(msg);
 };
-// Output or Error Message
+
+Valid
+Function sayHello is undefined
 ```
 
 ```js
@@ -49,4 +62,6 @@ sayHello("Hey Everyone");
 let sayHello = msg => {
   alert(msg);
 };
+Invalid
+Function sayHello is not defined
 ```
